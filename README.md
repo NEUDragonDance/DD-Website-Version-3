@@ -2,7 +2,7 @@
 Version 3.0 of the Northeastern University Dragon and Lion Dance Troupe website
 <br>By Serena Ng
 
-Updates:
+<strong>Updates:</strong>
 - Loading animations/transitions
 - Updated the Our Team page for 2024-25
 - Updated the Gallery page with recent performances and new copy
