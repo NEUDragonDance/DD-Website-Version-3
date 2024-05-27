@@ -1,6 +1,6 @@
 # DD-Website-Version-3
 Version 3.0 of the Northeastern University Dragon and Lion Dance Troupe website
-By Serena Ng
+<br>By Serena Ng
 
 Updates:
 - Loading animations/transitions
