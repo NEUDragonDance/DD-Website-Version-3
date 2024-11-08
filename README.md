@@ -10,3 +10,7 @@ Version 3.0 of the Northeastern University Dragon and Lion Dance Troupe website
 - Updated copy
 - Updated Join Us page to have the 2024-25 interest form link
 - Design updates (e.g. CSS styling, Client logos, more interactions, etc.)
+
+<h1>Ideas on updates</h1>
+- Overhaul to react?
+- Add modular ways to add pictures
