@@ -1,3 +1,7 @@
+# WIP React Refactor
+There is a new folder called ddld-website with the react versions of this homepage. This is in hopes that we can modulize the website. - Jonathan <br>
+Start of this project is 11/8/2024
+
 # DD-Website-Version-3
 Version 3.0 of the Northeastern University Dragon and Lion Dance Troupe website
 <br>By Serena Ng
