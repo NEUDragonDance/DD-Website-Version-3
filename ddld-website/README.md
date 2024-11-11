@@ -1,11 +1,21 @@
 # Dragon & Lion Dance Troupe Website
 
+## How to Update Website
+1. To update the photos: 
+    - Go to the `public/res` folder and find the corresponding folder with page and put the photo in there. (e.g. Adding `new_photo.jpg` in the homepage.Put the image in `public/res/home-page-photos`. It will become `public/res/home-page-photos/new_photo.jpg`)
+    - [WIP] Put the photo name into the `src/database.json` file. (e.g. Adding the same `new_photo.jpg`  !!!Add photo for this!!!)
+
+
 ## History
 Initially created by Serena Ng from ___ to 11/8/2024 with help from Roland and others.
 <br> <br>
 Refactor to React.js by Jonthan Yu from 11/8/2024. Additional file named ddld-website was created since react
 does not support capital letters in the folder name.<br>
 Uses node.js v22.11.0 & npm v10.9.0.
+
+## TODO/Notes
+- comments with "CONVERT TO DATABASE" should be change the below image to a json file
+- comments with "PUT INTO CSS FILE" should put the below style into a css file
 
 ## Available Scripts
 

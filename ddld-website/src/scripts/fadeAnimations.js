@@ -11,30 +11,30 @@ function openNav() {
   
   
   /* Fade-in animations */
-  document.addEventListener('DOMContentLoaded', () => {
-      const fadeIns = document.querySelectorAll('.fade-in');
-      const fadeIns2 = document.querySelectorAll('.fade-in-2');
+export function fadeIn(doc) {
+    const fadeIns = doc.querySelectorAll('.fade-in');
+    const fadeIns2 = doc.querySelectorAll('.fade-in-2');
   
-      const observerOptions = {
-          root: null, // Use the viewport as the container
-          rootMargin: '0px',
-          threshold: 0.1 // Trigger when at least 10% of the element is visible
-      };
+    const observerOptions = {
+        root: null, // Use the viewport as the container
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when at least 10% of the element is visible
+    };
   
-      const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  entry.target.classList.add('visible');
-                  observer.unobserve(entry.target); // Stop observing once the element is visible
-              }
-          });
-      }, observerOptions);
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }, observerOptions);
   
-      fadeIns.forEach(fadeIn => {
-          observer.observe(fadeIn);
-      });
+    fadeIns.forEach(fadeIn => {
+        observer.observe(fadeIn);
+    });
   
-      fadeIns2.forEach(fadeIn => {
-          observer.observe(fadeIn);
-      });
-  });
+    fadeIns2.forEach(fadeIn => {
+        observer.observe(fadeIn);
+    });
+  }

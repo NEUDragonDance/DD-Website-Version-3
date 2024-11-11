@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import { NAV_PATH } from "./../constants"
 
 function NavBar() {
     return(
         <>
+			{/* <!-- black gradient from the top -->
+			<!-- Slightly Darker Red = #981824 -->
+			<!-- Slightly Darker Orange = #E59955 --> */}
+			<div class="input-color">
+				{/* Moved background to defaultSTyles.css here from here */}
+				<div class="color-box" //style={{background: "linear-gradient(Black, hsla(0, 0%, 0%, 0));"}}
+				></div>
+			</div>
             {/*
                 <!-- TOP BAR ----------------------------------------------------------------------->
                 <!-- contains top left logo and logo text and navigation bar -->
@@ -54,7 +63,7 @@ function NavBar() {
                     */}
 					<div class="overlay-content">
 						<Link href="home" style={{color: "#FAAE58"}}>Home</Link>
-						<Link href="about-us-header">About</Link>
+						<Link href="#about-us-header">About</Link>
 						<Link href="Gallery">Gallery</Link>
 						<Link href="JoinUs">Our Team</Link>
 						<Link href="https://neudragonliondance.org/JoinUs.html#join-us-header">Join Us</Link>
@@ -67,8 +76,9 @@ function NavBar() {
 			<div class="top-section" id="top-section">
 				<div class="main-pic">
 					<picture>
-						<img src="NEU Dragon Dance Performance.jpeg"
-                                srcset="NEU Dragon Dance Performance.jpeg" type="image/webp" 
+						{/* CONVERT TO DATABASE */}
+						<img src={NAV_PATH + "Background-Thumbnail.JPG"}
+                                srcset={NAV_PATH + 'Background-Thumbnail.JPG'} type="image/webp" 
                                 width="100%" 
                                 alt="Dragon dance performance by Northeastern University Dragon and Lion Dance Troupe"/>
                                

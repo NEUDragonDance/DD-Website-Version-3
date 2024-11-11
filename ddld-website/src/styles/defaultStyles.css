@@ -79,6 +79,8 @@ h3 {
     margin-top: -10px;
     z-index: -1;
     margin-left: 0px;
+	/* Moved background to defaultSTyles.css here from index.html/NavBar.js */
+	background: linear-gradient(Black, hsla(0, 0%, 0%, 0));
 }
 
 /* red gradient (on home page) */
@@ -866,7 +868,7 @@ iframe {
 }
 
 .fade-in {
-	opacity: 0; /* Initial state */
+	opacity: 0;
 	transition: opacity 0.25s ease-in-out; 
 }
 
@@ -901,4 +903,17 @@ iframe {
 
 .fade-in-2.visible {
     opacity: 1; /* Fade to this state */
+}
+
+/* Some Default classes */
+.p-auto {
+	padding: auto;
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.text-center {
+	text-align: center;
 }
